@@ -7,10 +7,9 @@
 Este projeto tem como objetivo criar uma **tranca elétrica digital inteligente**, controlada tanto por um **bot do Telegram** quanto por um **controle remoto infravermelho**, utilizando um **ESP32** como microcontrolador principal.
 
 ## 🎯 Objetivo
-Desenvolver um sistema seguro e acessível para **abrir e fechar portas remotamente**, com indicações visuais de status e fácil integração com tecnologias do dia a dia. O projeto é ideal para uso residencial, comercial ou para aprendizado em IoT.
+Desenvolver um sistema seguro e acessível para **trancar e destrancar uma porta remotamente**, com indicações visuais de status e fácil integração com tecnologias do dia a dia. O projeto é ideal para uso residencial, comercial ou para aprendizado.
 
 ## 🔧 Componentes Utilizados
-
 - 1x ESP32 DevKit
 - 1x Tranca elétrica 12V
 - 1x Módulo relé 5V
@@ -40,7 +39,7 @@ Desenvolver um sistema seguro e acessível para **abrir e fechar portas remotame
 
 - Integração com **reconhecimento de voz**
 - Inclusão de **display LCD** para feedback visual
-- Logs em nuvem (ex: Firebase, Thingspeak)
+- Logs em nuvem (ex: Firebase)
 
 ## 🖼️ Esquemático do Projeto
 
@@ -50,6 +49,7 @@ Desenvolver um sistema seguro e acessível para **abrir e fechar portas remotame
 ## 🔐 Segurança
 
 O projeto usa verificação de `chat_id` no bot Telegram para evitar comandos não autorizados.
+Envia as informações se a porta está trancada através do Telegram.
 
 ---
 
